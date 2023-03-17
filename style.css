@@ -1,0 +1,224 @@
+body {
+    background-color: rgba(189, 174, 152, 0.849);
+
+}
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 270px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
+    color: #fff;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.firstImgDiv img {
+    width: 25rem;
+    height: 36rem;
+    margin-top: 4rem;
+    margin-top: 5rem;
+
+
+}
+
+.container {
+    display: grid;
+    justify-items:start;
+}
+
+.heroDiv {
+    height: 35rem;
+}
+
+.secondSection {
+    height: 30rem;
+    background-color: rgba(22, 20, 18, 0.889);
+
+}
+
+h1{
+    font-size: 6rem;
+margin-top: 10rem;
+font-family: 'Playfair Display', serif;
+color: rgb(55, 49, 43);
+}
+
+#cletter{
+    font-size: 3rem;
+    font-family:'Noto Serif', serif;
+}
+.navbar-brand{
+
+}
+
+.footer{
+    background-color: rgba(22, 20, 18, 0.889);
+    justify-content: center;
+}
+
+
+  .container {
+    position: relative;
+    width: 1160px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+    margin-bottom: 10rem;
+  }
+  .container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+  }
+  .container:hover .box {
+    transform: rotateY(25deg);
+  }
+  .container .box:hover ~ .box {
+    transform: rotateY(-25deg);
+  }
+  .container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+  }
+  .container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,rgb(79, 50, 50),#000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+  }
+  .container .box:hover .imgBx:before {
+    opacity: 1;
+  }
+  .container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+  .container .box .content h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+  }
+  .container .box:hover .content h2 {
+    transform: translateY(0px);
+  }
+  .container .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+  }
+  .container .box:hover .content p {
+    transform: translateY(0px);
+  }
