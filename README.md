@@ -7,6 +7,5 @@ I have created a web page for a café, the user will be asked about his\her name
  - Figma
  
  
- ![caffe website](https://user-images.githubusercontent.com/94164413/225878936-c137b6e0-1bbd-4c8e-818d-c4c62bf08505.png)
 
  
