@@ -2,17 +2,25 @@ let person = prompt("Please enter your name");
 
 let gender = prompt("Please enter your gender");
 
-if (gender == "female" || gender == "FEMALE") {
-  alert("Hello Mrs " + person);
 
 
-}
-else if (gender == "male" || gender == "MALE") {
-  alert("Hello Mr " + person);
-}
-else {
-  alert("Hello " + person);
-}
+    while(gender!= "female" && gender != "male")
+    {
+
+         gender = prompt("Please enter your gender correctly : ");
+
+
+    }
+
+    
+    if (gender == "female") {
+        alert("Hello Mrs " + person);
+    }
+    else if (gender == "male") {
+        alert("Hello Mr " + person);
+      }
+    
+
 
 // -----------------------------------------------------------------
 
@@ -22,7 +30,11 @@ let drinkName = prompt("What do you want to drink?");
 
 alert(drink +" " + drinkName + " is getting prepared");
 
-
 console.log(person +" "+ drinkName);
 
+let customerInfo = [person , gender , drink , drinkName];
+
+for (var i = 0; i < customerInfo.length; i++) {
+    console.log(customerInfo[i]);
+}
 
