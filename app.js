@@ -12,10 +12,10 @@ function genderName(gender1) {
     }
 
 
-    if (gender == "female") {
+    if (gender1 == "female") {
         alert("Hello Mrs " + person);
     }
-    else if (gender == "male") {
+    else if (gender1 == "male") {
         alert("Hello Mr " + person);
     }
 }
