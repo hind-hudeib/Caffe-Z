@@ -42,6 +42,10 @@ let customerInfo = [person, gender, drink, drinkName];
 // Write it back to the html page 
 let mainDiv = document.getElementById("jsDiv")
 let ul = document.createElement("ul");
+let paregraph = document.createElement("p");
+mainDiv.appendChild(paregraph);
+
+paregraph.textContent="hind hudeib";
 
 mainDiv.appendChild(ul);
 
