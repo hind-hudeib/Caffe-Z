@@ -273,3 +273,7 @@ body {
   transform: translateY(0px);
 }
 
+.formSec{
+  height: 40rem;
+  padding: 5rem;
+}

@@ -1,57 +1,34 @@
-let person = prompt("Please enter your name");
 
-let gender = prompt("Please enter your gender");
+const form = document.getElementById("form1");
+const div = document.getElementById("showDiv");
 
-
-function genderName(gender1) {
-    while (gender1 != "female" && gender1 != "male") {
-
-        gender1 = prompt("Please enter your gender correctly : ");
-
-
-    }
+form.addEventListener('submit' , (event)=>{
+    event.preventDefault();
+let Name = event.target.inputName.value;
+let age = event.target.inputNumber3.value;
+let drink = event.target.drinktype.checked ? "hot" : "cold";
+let drinkName = event.target.drinkText.value;
 
 
-    if (gender1 == "female") {
-        alert("Hello Mrs " + person);
-    }
-    else if (gender1 == "male") {
-        alert("Hello Mr " + person);
-    }
-}
+render(Name, age ,drink ,drinkName);
 
-genderName(gender)
-// -----------------------------------------------------------------
 
-let drink = prompt("Do you want a hot or cold drink ");
+});
+let div2 = document.createElement("div");
+function render(Name, age ,drink ,drinkName){
+    let p1 = document.createElement("p");
+    let p2 = document.createElement("p");
+    let p3 = document.createElement("p");
+    let p4 = document.createElement("p");
+    div.appendChild(div2)
 
-let drinkName = prompt("What do you want to drink?");
+    p1.textContent = Name;
+    p2.textContent = age ; 
+    p3.textContent = drink ;
+    p4.textContent = drinkName;
 
-alert(drink + " " + drinkName + " is getting prepared");
-
-console.log(person + " " + drinkName);
-
-let customerInfo = [person, gender, drink, drinkName];
-
-// for (var i = 0; i < customerInfo.length; i++) {
-//     console.log(customerInfo[i]);
-// }
-
-// Create a div > paragraph > ul > li 
-// Fill the data you got from the user into the previous elements : 
-// Write it back to the html page 
-let mainDiv = document.getElementById("jsDiv")
-let ul = document.createElement("ul");
-let paregraph = document.createElement("p");
-mainDiv.appendChild(paregraph);
-
-paregraph.textContent="hind hudeib";
-
-mainDiv.appendChild(ul);
-
-for (var i = 0; i < customerInfo.length; i++) {
-    let li = document.createElement("li");
-
-    li.innerHTML = customerInfo[i];
-    ul.appendChild(li);
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    div.appendChild(p4);
 }

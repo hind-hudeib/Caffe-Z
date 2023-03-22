@@ -76,7 +76,65 @@
 
 
   <main>
+<!-- -------------------------------------------------------------------------------- -->
+    <section class="formSec">
+      <div class="container-fluid">
 
+        <div class="row">
+
+          <div class="col-4">
+
+          </div>
+          <div class="col-4">
+            <form id="form1">
+              <div class="row mb-3">
+                <label for="inputName" class="col-sm-4 col-form-label">Name</label> <br>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" name="inputName">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputNumber3" class="col-sm-4 col-form-label">Age</label> <br>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="inputNumber3" name="inputNumber3">
+                </div>
+              </div>
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-4 pt-0">drink cold or hot ?</legend> <br>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="drinktype" value="option1" checked >
+                    <label class="form-check-label" for="gridRadios1">
+                      Hot
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridRadios" id="drinktype" value="option2">
+                    <label class="form-check-label" for="gridRadios1">
+                      Cold
+                    </label>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="drinkText" class="col-sm-4 col-form-label">Drink type</label> <br>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="drinkText" name="drinkText">
+                    </div>
+                  </div>
+              <button type="submit" class="btn btn-primary"> Submit </button>
+            </form>
+      
+          </div>
+          <div class="col-4">
+
+          </div>
+        </div>
+      </div>
+     
+      <div id="showDiv">
+
+      </div>
+      <!-- --------------------------------------------------------------------------- -->
+    </section>
     <section id="secondSection">
       <div class="container-fluid ">
         <div class="row ">
