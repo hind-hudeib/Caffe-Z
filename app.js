@@ -27,8 +27,11 @@ function render(Name, age ,drink ,drinkName){
     p3.textContent = drink ;
     p4.textContent = drinkName;
 
+
     div.appendChild(p1);
     div.appendChild(p2);
     div.appendChild(p3);
     div.appendChild(p4);
 }
+
+
